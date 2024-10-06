@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-4xl;
+	}
+	h2 {
+		@apply text-3xl;
+	}
+	h3 {
+		@apply text-2xl;
+	}
+}
+@layer components {
+	.shadow-custom {
+		box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.19);
+	}
+}
+.hover-handles .react-resizable-handle {
+	display: none;
+}
+.hover-handles:hover .react-resizable-handle {
+	display: block;
+}
